@@ -1,0 +1,1614 @@
+HeaderV2
+{
+o
+{
+Uuid %id{u4{5928972922640146093,6597314863278502111}}
+s %t{"plAssetDocumentInfo"}
+u3 %v{2}
+s %n{"Header"}
+p
+{
+s %AssetType{"Scene"}
+Uuid %DocumentID{u4{5928972922640146093,6597314863278502111}}
+u4 %Hash{4058494009384769819}
+VarArray %Dependencies{}
+VarArray %References{}
+VarArray %MetaInfo{}
+VarArray %Outputs{}
+VarArray %PackageDeps{}
+}
+}
+}
+Objects
+{
+o
+{
+Uuid %id{u4{18063484147426425262,6696783411075752919}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.014,0.022,0.047,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{16340573462684834200,5932848187135611733}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Table base"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,-0.5,-0.6}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{19.4,22.4,1}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{18063484147426425262,6696783411075752919}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{12833198397285378207,6641521731369489935}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.028,0.055,0.085,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{6540221019955132292,6433281524020931519}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Playing surface"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,-0.5,-0.06}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{18,21,0.1}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{12833198397285378207,6641521731369489935}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{13060104976014519206,5785017508252167769}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.1,0.16,0.23,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{10744832201719629964,5902772123923691394}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Side rail -9.25"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-9.25,-0.5,0.2}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.5,21,0.6}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{13060104976014519206,5785017508252167769}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{2481316291448266421,5790085497250737847}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.08,0.85,0.65,1}}
+VarArray %Materials{s{"Materials/Glow.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{5864941680845486741,5825088637873178093}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Rail light -9.25"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-9.25,-0.5,0.51}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.08,21,0.04}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{2481316291448266421,5790085497250737847}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{10669576982589149841,6462936193131705133}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.1,0.16,0.23,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{14389084661126870447,5928187547364345659}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Side rail 9.25"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{9.25,-0.5,0.2}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.5,21,0.6}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{10669576982589149841,6462936193131705133}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{12963226883753175424,6819886747381376265}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.08,0.85,0.65,1}}
+VarArray %Materials{s{"Materials/Glow.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{7883011251217898142,6704913062322616648}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Rail light 9.25"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{9.25,-0.5,0.51}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.08,21,0.04}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{12963226883753175424,6819886747381376265}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{12245083096850639503,6367909815383612995}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.1,0.16,0.23,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{2120930259781403324,6913358769126317631}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Back rail"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,10.25,0.2}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{19,0.5,0.6}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{12245083096850639503,6367909815383612995}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{1405170827719098045,5799845457596047456}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.08,0.85,0.65,1}}
+VarArray %Materials{s{"Materials/Glow.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{5087034965097917844,5815571121413747253}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Back light"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,10.25,0.51}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{18.5,0.08,0.04}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{1405170827719098045,5799845457596047456}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{12310878760704483738,6819110108208198708}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.85,0.16,0.1,1}}
+VarArray %Materials{s{"Materials/Glow.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{11129569209420498619,6032477469926116490}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Drain warning"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,-10.6,0.01}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{17.6,0.07,0.02}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{12310878760704483738,6819110108208198708}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{3501039293511829406,5888680835740106762}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{5177671907553773241,5959905765667092429}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay -8"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-8,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{3501039293511829406,5888680835740106762}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{7453934596315405726,5914372809575329265}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{4813353649799355284,6103562386224934707}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay -6"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-6,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{7453934596315405726,5914372809575329265}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{16065065981004262295,6572765761338820152}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{14943764354100933763,6364287320816792016}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay -4"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-4,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{16065065981004262295,6572765761338820152}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{4818500976908852411,5932458333112227798}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{1652174285663545731,6901562009459425716}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay -2"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-2,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{4818500976908852411,5932458333112227798}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{17835950487328835467,6721520154150369139}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{5688236666769154200,6364264432212819740}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay 0"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{17835950487328835467,6721520154150369139}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{17977812993071712412,5775722098749943799}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{25380017679497120,6847275911101184835}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay 2"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{2,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{17977812993071712412,5775722098749943799}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{16668264845011406744,5945178818399529743}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{3794923352478419335,6549822474001645415}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay 4"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{4,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{16668264845011406744,5945178818399529743}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{6301104232654446477,6630679285276412892}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{828080703908059323,6028136306842045589}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay 6"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{6,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{6301104232654446477,6630679285276412892}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{11802431511629687187,6771847367592778925}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.05,0.1,0.13,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{6924961438416846732,6322216088475151936}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Inlay 8"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{8,-0.5,0.005}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.018,20.5,0.008}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{11802431511629687187,6771847367592778925}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{18131786907548592523,6065177531956311577}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.08,0.85,0.65,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{3032574288984033937,5782496541828656309}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Paddle"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,-8.2,0.34}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{3.3,0.7,0.55}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{18131786907548592523,6065177531956311577}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{14231400751905025672,6176937370370374576}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 16870b28-dbf2-5792-b79a-08b5a91f3460 }"}
+Color %Color{f{1,0.88,0.6,1}}
+VarArray %Materials{s{"Materials/Glow.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{10522436321951203771,6490865909279406197}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Ball"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,-7.53,0.38}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{0.28,0.28,0.28}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{14231400751905025672,6176937370370374576}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{4196775896941010324,6239390480096168681}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.04,0.62,0.88,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{2131057881393930624,6497317930118284284}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 1"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-7,3.0,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{4196775896941010324,6239390480096168681}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{17776710420573107343,6308165674557813697}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.04,0.62,0.88,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{10690479659494043825,6526054214156304527}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 2"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-5,3.0,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{17776710420573107343,6308165674557813697}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{14119257011341468584,5848202558283952237}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.04,0.62,0.88,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{1809301678119350151,5843161182403433862}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 3"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-3,3.0,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{14119257011341468584,5848202558283952237}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{15807486585895923885,5886619981795188226}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.04,0.62,0.88,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{18251079218612951692,6067572664703130836}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 4"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-1,3.0,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{15807486585895923885,5886619981795188226}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{2421781832664463252,5916403333773248659}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.04,0.62,0.88,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{12934782097998120591,6108579282937956344}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 5"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{1,3.0,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{2421781832664463252,5916403333773248659}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{5889125892139563439,5822987114808085268}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.04,0.62,0.88,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{10235491767898767777,5955971281094860251}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 6"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{3,3.0,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{5889125892139563439,5822987114808085268}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{16181099861427999623,6061095784716768407}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.04,0.62,0.88,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{10810276071517382800,6091556887955389920}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 7"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{5,3.0,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{16181099861427999623,6061095784716768407}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{15162993727781853617,6280662520231486860}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.04,0.62,0.88,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{4538933802813505457,6062096535607224561}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 8"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{7,3.0,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{15162993727781853617,6280662520231486860}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{1800823872186246065,6484780487359252780}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.4,0.16,0.9,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{15895069208417811889,6707780400918967725}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 9"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-7,4.6,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{1800823872186246065,6484780487359252780}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{5311522050003114376,6652747054527300950}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.4,0.16,0.9,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{17325900539601762469,6123586994348959622}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 10"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-5,4.6,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{5311522050003114376,6652747054527300950}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{12306499043727805873,6016519408958093185}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.4,0.16,0.9,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{10956017085987022514,6363462542709786790}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 11"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-3,4.6,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{12306499043727805873,6016519408958093185}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{16370569529626193554,6618068839239125129}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.4,0.16,0.9,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{6340911477363151776,6000650175857420100}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 12"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-1,4.6,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{16370569529626193554,6618068839239125129}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{4845863442693095607,6675085592970550453}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.4,0.16,0.9,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{8719063653898389393,6446464516938797562}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 13"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{1,4.6,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{4845863442693095607,6675085592970550453}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{6230415826028226443,6254758346750015575}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.4,0.16,0.9,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{10891417108335583876,6089010388318314972}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 14"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{3,4.6,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{6230415826028226443,6254758346750015575}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{2501519743241908111,6822261702992223803}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.4,0.16,0.9,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{17104181600284566463,6885649029649556343}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 15"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{5,4.6,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{2501519743241908111,6822261702992223803}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{15629447322584874403,6125839667527588240}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{0.4,0.16,0.9,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{2987157554045875846,6589580423337405501}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 16"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{7,4.6,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{15629447322584874403,6125839667527588240}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{16552537303196026296,6071933646430890814}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{1,0.26,0.1,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{4869237544058643605,5830882478678989151}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 17"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-7,6.2,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{16552537303196026296,6071933646430890814}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{4596897517166219198,6494488323910545415}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{1,0.26,0.1,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{13055240680440910770,6082125239061251347}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 18"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-5,6.2,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{4596897517166219198,6494488323910545415}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{6381602065105050797,5944207807458550486}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{1,0.26,0.1,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{12821578793807796629,6573077906741232604}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 19"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-3,6.2,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{6381602065105050797,5944207807458550486}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{18168742865269081491,6755957373331918461}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{1,0.26,0.1,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{2280017269344954511,6044496140843536865}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 20"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{-1,6.2,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{18168742865269081491,6755957373331918461}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{4030729613572689818,6295596871657373915}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{1,0.26,0.1,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{13663200358224689066,5776929931537103859}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 21"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{1,6.2,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{4030729613572689818,6295596871657373915}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{17939211463180626870,6408336806092858789}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{1,0.26,0.1,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{10058374327930782367,6440153250801148692}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 22"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{3,6.2,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{17939211463180626870,6408336806092858789}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{5899326637854882749,6331827216129786970}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{1,0.26,0.1,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{9205508232873748892,6400824107526280595}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 23"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{5,6.2,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{5899326637854882749,6331827216129786970}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{5808779475134539168,6836877700872078217}}
+s %t{"plMeshComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %Mesh{"{ 337f1e0d-36a2-5f0b-811b-9f4f462b6c8c }"}
+Color %Color{f{1,0.26,0.1,1}}
+VarArray %Materials{s{"Materials/BrickBreaker.plMaterial"}}
+}
+}
+o
+{
+Uuid %id{u4{17148282349187045044,6213497925997266665}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick 24"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{7,6.2,0.42}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1.72,0.86,0.74}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{5808779475134539168,6836877700872078217}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{11044444685149294014,5973355927476362096}}
+s %t{"plCameraComponent"}
+u3 %v{12}
+p
+{
+b %Active{1}
+s %UsageHint{"plCameraUsageHint::MainView"}
+s %Mode{"plCameraMode::PerspectiveFixedFovY"}
+f %FOV{48}
+f %NearPlane{0.1}
+f %FarPlane{200}
+}
+}
+o
+{
+Uuid %id{u4{7062992710953435303,6625191869107625288}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Camera"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,-22,30}}
+Quat %LocalRotation{f{-0.3196233472278279,0.3196233472278279,0.6307463166019118,0.6307463166019118}}
+Vec3 %LocalScaling{f{1,1,1}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{11044444685149294014,5973355927476362096}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{1050548405391236744,6332990847947250171}}
+s %t{"plDirectionalLightComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+f %Intensity{3}
+b %CastShadows{1}
+}
+}
+o
+{
+Uuid %id{u4{12326635746521946251,6829197703813437824}}
+s %t{"plAmbientLightComponent"}
+u3 %v{2}
+p
+{
+b %Active{1}
+Color %TopColor{f{0.3,0.38,0.5,1}}
+Color %BottomColor{f{0.08,0.1,0.15,1}}
+f %Intensity{0.7}
+}
+}
+o
+{
+Uuid %id{u4{15914183810594704522,6661379981320905124}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Lighting"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,0,0}}
+Quat %LocalRotation{f{0.0,0.7393870239935166,0.29575480959740663,0.6048437164673307}}
+Vec3 %LocalScaling{f{1,1,1}}
+f %LocalUniformScaling{1}
+VarArray %Tags{s{"CastShadow"}}
+VarArray %Components{Uuid{u4{1050548405391236744,6332990847947250171}}Uuid{u4{12326635746521946251,6829197703813437824}}}
+VarArray %Children{}
+}
+}
+o
+{
+Uuid %id{u4{3955502197439421851,5812923136378593454}}
+s %t{"plScriptComponent"}
+u3 %v{2}
+p
+{
+b %Active{1}
+s %ScriptClass{"{ 3a78af2a-a287-a8b2-32a3-cbfb328559f4 }"}
+Time %UpdateInterval{d{0}}
+VarDict %Parameters{}
+}
+}
+o
+{
+Uuid %id{u4{18092756956119344768,5870856116580703388}}
+s %t{"plInputComponent"}
+u3 %v{3}
+p
+{
+b %Active{1}
+s %InputSet{"BrickBreaker"}
+s %Granularity{"plInputMessageGranularity::PressReleaseAndDown"}
+b %ForwardToBlackboard{0}
+}
+}
+o
+{
+Uuid %id{u4{5549553075045333140,5892253721046046820}}
+s %t{"plLocalBlackboardComponent"}
+u3 %v{1}
+p
+{
+b %Active{1}
+s %BlackboardName{"BrickBreakerHUD"}
+s %Template{"{ 52d2c7da-ec53-536d-987f-89c07b95548e }"}
+b %ShowDebugInfo{0}
+}
+}
+o
+{
+Uuid %id{u4{3210379192763380649,6444108137957314578}}
+s %t{"plUiCanvasComponent"}
+u3 %v{4}
+p
+{
+b %Active{1}
+s %UiDocument{"{ 61c3ff65-11ba-552b-aa23-8b1f128ee05d }"}
+s %ScaleMode{"plUiCanvasScaleMode::ScaleWithHeight"}
+u3 %ReferenceHeight{900}
+b %AutobindBlackboards{1}
+}
+}
+o
+{
+Uuid %id{u4{4648263410366514862,6636077606703983254}}
+s %t{"plGameObject"}
+u3 %v{1}
+p
+{
+s %Name{"Brick Breaker"}
+s %Mode{"plObjectMode::ForceDynamic"}
+b %Active{1}
+Vec3 %LocalPosition{f{0,0,0}}
+Quat %LocalRotation{f{0,0,0,1}}
+Vec3 %LocalScaling{f{1,1,1}}
+f %LocalUniformScaling{1}
+VarArray %Components{Uuid{u4{18092756956119344768,5870856116580703388}}Uuid{u4{5549553075045333140,5892253721046046820}}Uuid{u4{3210379192763380649,6444108137957314578}}Uuid{u4{3955502197439421851,5812923136378593454}}}
+VarArray %Children{Uuid{u4{16340573462684834200,5932848187135611733}}Uuid{u4{6540221019955132292,6433281524020931519}}Uuid{u4{10744832201719629964,5902772123923691394}}Uuid{u4{5864941680845486741,5825088637873178093}}Uuid{u4{14389084661126870447,5928187547364345659}}Uuid{u4{7883011251217898142,6704913062322616648}}Uuid{u4{2120930259781403324,6913358769126317631}}Uuid{u4{5087034965097917844,5815571121413747253}}Uuid{u4{11129569209420498619,6032477469926116490}}Uuid{u4{5177671907553773241,5959905765667092429}}Uuid{u4{4813353649799355284,6103562386224934707}}Uuid{u4{14943764354100933763,6364287320816792016}}Uuid{u4{1652174285663545731,6901562009459425716}}Uuid{u4{5688236666769154200,6364264432212819740}}Uuid{u4{25380017679497120,6847275911101184835}}Uuid{u4{3794923352478419335,6549822474001645415}}Uuid{u4{828080703908059323,6028136306842045589}}Uuid{u4{6924961438416846732,6322216088475151936}}Uuid{u4{3032574288984033937,5782496541828656309}}Uuid{u4{10522436321951203771,6490865909279406197}}Uuid{u4{2131057881393930624,6497317930118284284}}Uuid{u4{10690479659494043825,6526054214156304527}}Uuid{u4{1809301678119350151,5843161182403433862}}Uuid{u4{18251079218612951692,6067572664703130836}}Uuid{u4{12934782097998120591,6108579282937956344}}Uuid{u4{10235491767898767777,5955971281094860251}}Uuid{u4{10810276071517382800,6091556887955389920}}Uuid{u4{4538933802813505457,6062096535607224561}}Uuid{u4{15895069208417811889,6707780400918967725}}Uuid{u4{17325900539601762469,6123586994348959622}}Uuid{u4{10956017085987022514,6363462542709786790}}Uuid{u4{6340911477363151776,6000650175857420100}}Uuid{u4{8719063653898389393,6446464516938797562}}Uuid{u4{10891417108335583876,6089010388318314972}}Uuid{u4{17104181600284566463,6885649029649556343}}Uuid{u4{2987157554045875846,6589580423337405501}}Uuid{u4{4869237544058643605,5830882478678989151}}Uuid{u4{13055240680440910770,6082125239061251347}}Uuid{u4{12821578793807796629,6573077906741232604}}Uuid{u4{2280017269344954511,6044496140843536865}}Uuid{u4{13663200358224689066,5776929931537103859}}Uuid{u4{10058374327930782367,6440153250801148692}}Uuid{u4{9205508232873748892,6400824107526280595}}Uuid{u4{17148282349187045044,6213497925997266665}}Uuid{u4{7062992710953435303,6625191869107625288}}Uuid{u4{15914183810594704522,6661379981320905124}}}
+}
+}
+o
+{
+Uuid %id{u4{17419874786167496351,6512315156257112505}}
+s %t{"plSceneDocumentRoot"}
+u3 %v{2}
+s %n{"ObjectTree"}
+p
+{
+VarArray %Children{Uuid{u4{4648263410366514862,6636077606703983254}}}
+Uuid %Settings{u4{8304464005956614040,6437320584707260557}}
+}
+}
+o
+{
+Uuid %id{u4{8304464005956614040,6437320584707260557}}
+s %t{"plSceneDocumentSettings"}
+u3 %v{2}
+p
+{
+VarArray %Layers{Uuid{u4{3116391375028000408,5785497145927925408}}}
+}
+}
+o
+{
+Uuid %id{u4{3116391375028000408,5785497145927925408}}
+s %t{"plSceneLayer"}
+u3 %v{1}
+p
+{
+Uuid %Layer{u4{5928972922640146093,6597314863278502111}}
+}
+}
+}
+Types{}

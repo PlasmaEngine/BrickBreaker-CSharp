@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <PlasmaBindingManifest Condition="'$(PlasmaBindingManifest)' == ''">Intermediate/PlasmaBindings.json</PlasmaBindingManifest>
+    <PlasmaSourceRoot>$(MSBuildProjectDirectory)</PlasmaSourceRoot>
+    <CSharpPayload>$(MSBuildProjectDirectory)/Plugins/plasma.csharp/1.2.1/Bin/Windows_x64_Development/CSharp</CSharpPayload>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Scripts/**/*.cs" />
+    <CompilerVisibleProperty Include="PlasmaSourceRoot" />
+    <AdditionalFiles Include="$(PlasmaBindingManifest)" />
+    <Reference Include="Plasma.ScriptCore"><HintPath>$(CSharpPayload)/Plasma.ScriptCore.dll</HintPath><Private>false</Private></Reference>
+    <Analyzer Include="$(CSharpPayload)/M0Game/Plasma.Engine.Generator.dll" />
+  </ItemGroup>
+</Project>

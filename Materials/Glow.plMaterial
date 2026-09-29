@@ -1,0 +1,9 @@
+string %Shader { "Shaders/Materials/DefaultMaterial.plShader" }
+Permutation { string %Variable { "BLEND_MODE" } string %Value { "BLEND_MODE_OPAQUE" } }
+Permutation { string %Variable { "SHADING_MODE" } string %Value { "SHADING_MODE_FULLBRIGHT" } }
+Permutation { string %Variable { "TWO_SIDED" } string %Value { "FALSE" } }
+Constant { string %Variable { "BaseColor" } Color %Value { float { 1, 1, 1, 1 } } }
+Constant { string %Variable { "RoughnessValue" } float %Value { 0.38 } }
+Constant { string %Variable { "MetallicValue" } float %Value { 0.18 } }
+Constant { string %Variable { "UseBaseTexture" } uint32 %Value { 0 } }
+Constant { string %Variable { "UseNormalTexture" } uint32 %Value { 0 } }

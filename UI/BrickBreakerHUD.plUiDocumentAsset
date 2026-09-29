@@ -1,0 +1,325 @@
+HeaderV2
+{
+o
+{
+Uuid %id{u4{6764562848800252842,6137018409424256869}}
+s %t{"plAssetDocumentInfo"}
+u3 %v{2}
+s %n{"Header"}
+p
+{
+s %AssetType{"UI Document"}
+Uuid %DocumentID{u4{6764562848800252842,6137018409424256869}}
+u4 %Hash{6652442058550384350}
+VarArray %Dependencies{s{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}s{"{ 52d2c7da-ec53-536d-987f-89c07b95548e }"}}
+VarArray %References{}
+VarArray %MetaInfo{}
+VarArray %Outputs{}
+VarArray %PackageDeps{}
+}
+}
+}
+Objects
+{
+o
+{
+Uuid %id{u4{6890649799928505021,6303810259555549428}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"Title"}
+Vec2 %AnchorMin{f{0,0}}
+Vec2 %AnchorMax{f{0,0}}
+Vec4 %Offsets{f{32,15,380,40}}
+VarArray %Children{}
+s %Text{"BRICK / BREAKER"}
+s %TextBinding{""}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{28}
+ColorGamma %TextColor{u1{230,242,248,255}}
+s %HAlign{"plUiTextHAlign::Left"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{5915245576739153046,6592741581948804877}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"Edition"}
+Vec2 %AnchorMin{f{0,0}}
+Vec2 %AnchorMax{f{0,0}}
+Vec4 %Offsets{f{34,57,370,24}}
+VarArray %Children{}
+s %Text{"3D ARCADE    /    C#"}
+s %TextBinding{""}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{13}
+ColorGamma %TextColor{u1{80,238,205,255}}
+s %HAlign{"plUiTextHAlign::Left"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{15864456926994358956,6190554960508283445}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"ScoreLabel"}
+Vec2 %AnchorMin{f{1,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{-340,18,92,20}}
+VarArray %Children{}
+s %Text{"SCORE"}
+s %TextBinding{""}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{12}
+ColorGamma %TextColor{u1{80,238,205,255}}
+s %HAlign{"plUiTextHAlign::Right"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{10456905246737139391,6225942181204996872}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"ScoreValue"}
+Vec2 %AnchorMin{f{1,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{-340,39,92,35}}
+VarArray %Children{}
+s %Text{"0"}
+s %TextBinding{"Score"}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{25}
+ColorGamma %TextColor{u1{230,242,248,255}}
+s %HAlign{"plUiTextHAlign::Right"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{15853319009366260891,6210733087143230130}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"LivesLabel"}
+Vec2 %AnchorMin{f{1,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{-220,18,92,20}}
+VarArray %Children{}
+s %Text{"LIVES"}
+s %TextBinding{""}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{12}
+ColorGamma %TextColor{u1{80,238,205,255}}
+s %HAlign{"plUiTextHAlign::Right"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{16666579912887712180,6750205847488104269}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"LivesValue"}
+Vec2 %AnchorMin{f{1,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{-220,39,92,35}}
+VarArray %Children{}
+s %Text{"3"}
+s %TextBinding{"Lives"}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{25}
+ColorGamma %TextColor{u1{230,242,248,255}}
+s %HAlign{"plUiTextHAlign::Right"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{12378575017963092871,6275783238313410252}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"BricksLabel"}
+Vec2 %AnchorMin{f{1,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{-110,18,92,20}}
+VarArray %Children{}
+s %Text{"BRICKS"}
+s %TextBinding{""}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{12}
+ColorGamma %TextColor{u1{80,238,205,255}}
+s %HAlign{"plUiTextHAlign::Right"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{426881596928705199,6076949372922518778}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"BricksValue"}
+Vec2 %AnchorMin{f{1,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{-110,39,92,35}}
+VarArray %Children{}
+s %Text{"24"}
+s %TextBinding{"Bricks"}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{25}
+ColorGamma %TextColor{u1{230,242,248,255}}
+s %HAlign{"plUiTextHAlign::Right"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{2449260834939560618,5908926130923514778}}
+s %t{"plUiPanel"}
+u3 %v{1}
+p
+{
+s %Name{"Header"}
+Vec2 %AnchorMin{f{0,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{0,0,0,96}}
+VarArray %Children{Uuid {u4{6890649799928505021,6303810259555549428}}Uuid {u4{5915245576739153046,6592741581948804877}}Uuid {u4{15864456926994358956,6190554960508283445}}Uuid {u4{10456905246737139391,6225942181204996872}}Uuid {u4{15853319009366260891,6210733087143230130}}Uuid {u4{16666579912887712180,6750205847488104269}}Uuid {u4{12378575017963092871,6275783238313410252}}Uuid {u4{426881596928705199,6076949372922518778}}}
+ColorGamma %Color{u1{12,21,34,244}}
+}
+}
+o
+{
+Uuid %id{u4{17434817332023394744,6390700671188943265}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"Controls"}
+Vec2 %AnchorMin{f{0,0}}
+Vec2 %AnchorMax{f{1,1}}
+Vec4 %Offsets{f{18,0,-18,0}}
+VarArray %Children{}
+s %Text{"A / D or arrows: move     SPACE / click: launch     P / ESC: pause     R: restart"}
+s %TextBinding{""}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{16}
+ColorGamma %TextColor{u1{230,242,248,255}}
+s %HAlign{"plUiTextHAlign::Center"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{1597767936361935282,6763792581265305262}}
+s %t{"plUiPanel"}
+u3 %v{1}
+p
+{
+s %Name{"Footer"}
+Vec2 %AnchorMin{f{0,1}}
+Vec2 %AnchorMax{f{1,1}}
+Vec4 %Offsets{f{0,-54,0,54}}
+VarArray %Children{Uuid {u4{17434817332023394744,6390700671188943265}}}
+ColorGamma %Color{u1{12,21,34,244}}
+}
+}
+o
+{
+Uuid %id{u4{1802930413649301133,5770169485336008398}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"PromptTitle"}
+Vec2 %AnchorMin{f{0,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{24,16,-24,34}}
+VarArray %Children{}
+s %Text{"CLEAR THE TABLE"}
+s %TextBinding{"PromptTitle"}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{28}
+ColorGamma %TextColor{u1{80,238,205,255}}
+s %HAlign{"plUiTextHAlign::Center"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{12230630064838202281,6027952839216791344}}
+s %t{"plUiText"}
+u3 %v{1}
+p
+{
+s %Name{"PromptSubtitle"}
+Vec2 %AnchorMin{f{0,0}}
+Vec2 %AnchorMax{f{1,0}}
+Vec4 %Offsets{f{24,65,-24,28}}
+VarArray %Children{}
+s %Text{"Move into position, then press SPACE to launch"}
+s %TextBinding{"PromptSubtitle"}
+s %Font{"{ b2bdbf5a-d38b-5ea7-9647-dc4de069f611 }"}
+u3 %FontSize{17}
+ColorGamma %TextColor{u1{230,242,248,255}}
+s %HAlign{"plUiTextHAlign::Center"}
+s %VAlign{"plUiTextVAlign::Center"}
+}
+}
+o
+{
+Uuid %id{u4{17079871664947324043,5951014720366231403}}
+s %t{"plUiPanel"}
+u3 %v{1}
+p
+{
+s %Name{"Prompt"}
+Vec2 %AnchorMin{f{0.5,0.55}}
+Vec2 %AnchorMax{f{0.5,0.55}}
+Vec4 %Offsets{f{-300,-18,600,118}}
+VarArray %Children{Uuid {u4{1802930413649301133,5770169485336008398}}Uuid {u4{12230630064838202281,6027952839216791344}}}
+ColorGamma %Color{u1{12,21,34,242}}
+f %CornerRadius{12}
+s %VisibleBinding{"ShowPrompt"}
+}
+}
+o
+{
+Uuid %id{u4{6922063546098673854,6753084731899417941}}
+s %t{"plUiDocumentAssetProperties"}
+u3 %v{1}
+p
+{
+VarArray %Children{Uuid {u4{2449260834939560618,5908926130923514778}}Uuid {u4{1597767936361935282,6763792581265305262}}Uuid {u4{17079871664947324043,5951014720366231403}}}
+s %BlackboardTemplate{"{ 52d2c7da-ec53-536d-987f-89c07b95548e }"}
+}
+}
+o
+{
+Uuid %id{u4{3610758051479517622,5935132312585287807}}
+s %t{"plDocumentRoot"}
+u3 %v{1}
+s %n{"ObjectTree"}
+p
+{
+VarArray %Children{Uuid {u4{6922063546098673854,6753084731899417941}}}
+}
+}
+}
+Types{}

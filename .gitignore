@@ -1,0 +1,10 @@
+AssetCache/
+Plugins/
+Intermediate/
+obj/
+bin/
+Editor/Preferences/
+RuntimeConfigs/*.plProfile
+plLauncher
+plDefaultAssertHandlerOutput.txt
+!README.md

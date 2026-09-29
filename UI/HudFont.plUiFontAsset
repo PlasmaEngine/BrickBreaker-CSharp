@@ -1,0 +1,48 @@
+HeaderV2
+{
+o
+{
+Uuid %id{u4{1294338355015468950,6820652757628600154}}
+s %t{"plAssetDocumentInfo"}
+u3 %v{2}
+s %n{"Header"}
+p
+{
+s %AssetType{"UI Font"}
+Uuid %DocumentID{u4{1294338355015468950,6820652757628600154}}
+u4 %Hash{521125804635130925}
+VarArray %Dependencies{s{"UI/Theme/Fonts/PT Root UI_Regular.otf"}}
+VarArray %References{}
+VarArray %MetaInfo{}
+VarArray %Outputs{}
+VarArray %PackageDeps{}
+}
+}
+}
+Objects
+{
+o
+{
+Uuid %id{u4{9819773500005671092,6292550280530807324}}
+s %t{"plUiFontAssetProperties"}
+u3 %v{1}
+p
+{
+s %FontFile{"UI/Theme/Fonts/PT Root UI_Regular.otf"}
+u3 %BaseSize{48}
+b %Latin{1}
+}
+}
+o
+{
+Uuid %id{u4{1858063519873819814,6891869795547428260}}
+s %t{"plDocumentRoot"}
+u3 %v{1}
+s %n{"ObjectTree"}
+p
+{
+VarArray %Children{Uuid {u4{9819773500005671092,6292550280530807324}}}
+}
+}
+}
+Types{}

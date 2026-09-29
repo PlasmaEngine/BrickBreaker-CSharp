@@ -1,0 +1,119 @@
+HeaderV2
+{
+o
+{
+Uuid %id{u4{10255986610173214616,6011720920225466330}}
+s %t{"plAssetDocumentInfo"}
+u3 %v{2}
+s %n{"Header"}
+p
+{
+s %AssetType{"BlackboardTemplate"}
+Uuid %DocumentID{u4{10255986610173214616,6011720920225466330}}
+u4 %Hash{11219798924329425581}
+VarArray %Dependencies{}
+VarArray %References{}
+VarArray %MetaInfo{}
+VarArray %Outputs{}
+VarArray %PackageDeps{}
+}
+}
+}
+Objects
+{
+o
+{
+Uuid %id{u4{3294360390196339588,6836017748189129427}}
+s %t{"plBlackboardEntry"}
+u3 %v{1}
+p
+{
+HashedString %Name{s{"Score"}}
+i3 %InitialValue{0}
+s %Flags{""}
+}
+}
+o
+{
+Uuid %id{u4{12586011322631983292,5781287067621589300}}
+s %t{"plBlackboardEntry"}
+u3 %v{1}
+p
+{
+HashedString %Name{s{"Lives"}}
+i3 %InitialValue{3}
+s %Flags{""}
+}
+}
+o
+{
+Uuid %id{u4{16538971422461534592,6748488314357072517}}
+s %t{"plBlackboardEntry"}
+u3 %v{1}
+p
+{
+HashedString %Name{s{"Bricks"}}
+i3 %InitialValue{24}
+s %Flags{""}
+}
+}
+o
+{
+Uuid %id{u4{13942498796826665621,6584100857074433081}}
+s %t{"plBlackboardEntry"}
+u3 %v{1}
+p
+{
+HashedString %Name{s{"ShowPrompt"}}
+b %InitialValue{1}
+s %Flags{""}
+}
+}
+o
+{
+Uuid %id{u4{7289786059307630489,6567121444757773608}}
+s %t{"plBlackboardEntry"}
+u3 %v{1}
+p
+{
+HashedString %Name{s{"PromptTitle"}}
+s %InitialValue{"CLEAR THE TABLE"}
+s %Flags{""}
+}
+}
+o
+{
+Uuid %id{u4{1294173038063606669,6077857641538278115}}
+s %t{"plBlackboardEntry"}
+u3 %v{1}
+p
+{
+HashedString %Name{s{"PromptSubtitle"}}
+s %InitialValue{"Move into position, then press SPACE to launch"}
+s %Flags{""}
+}
+}
+o
+{
+Uuid %id{u4{4089461304962324366,5819065745322401716}}
+s %t{"plBlackboardTemplateAssetObject"}
+u3 %v{1}
+p
+{
+VarArray %Entries{Uuid {u4{3294360390196339588,6836017748189129427}}Uuid {u4{12586011322631983292,5781287067621589300}}Uuid {u4{16538971422461534592,6748488314357072517}}Uuid {u4{13942498796826665621,6584100857074433081}}Uuid {u4{7289786059307630489,6567121444757773608}}Uuid {u4{1294173038063606669,6077857641538278115}}}
+VarArray %BaseTemplates{}
+}
+}
+o
+{
+Uuid %id{u4{8585465882085788324,6741789736853917134}}
+s %t{"plDocumentRoot"}
+u3 %v{1}
+s %n{"ObjectTree"}
+p
+{
+VarArray %Children{Uuid {u4{4089461304962324366,5819065745322401716}}}
+}
+}
+}
+Types{}

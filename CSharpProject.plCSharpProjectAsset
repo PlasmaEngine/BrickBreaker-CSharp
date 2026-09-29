@@ -1,0 +1,191 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{12019711690504174857,1187450143061016252}}
+	s %t{"plExposedParameter"}
+	u3 %v{3}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Member"}
+		b %DefaultValue{0}
+		s %Name{"RunMechanicsChecks"}
+		s %Type{"bool"}
+	}
+}
+o
+{
+	Uuid %id{u4{17951048973660765273,4550313622332261205}}
+	s %t{"plCSharpProjectAssetMetaData"}
+	u3 %v{3}
+	p
+	{
+		s %DescriptorJson{"{\r\n  \"inspectorVersion\": 1,\r\n  \"entryAssembly\": \"BrickBreaker.dll\",\r\n  \"classes\": [\r\n    {\r\n      \"persistentGuid\": \"671e330c-f424-53c4-99fe-a612b5b04069\",\r\n      \"typeId\": \"E542A7983BCDBEEB\",\r\n      \"managedName\": \"Game.Scripts.BrickBreaker\",\r\n      \"sourceFile\": \"Scripts/BrickBreaker.cs\",\r\n      \"fields\": [\r\n        {\r\n          \"id\": \"D1EC21AFE5EA08C4\",\r\n          \"name\": \"RunMechanicsChecks\",\r\n          \"managedType\": \"System.Boolean\",\r\n          \"defaultValue\": {\r\n            \"kind\": \"boolean\",\r\n            \"value\": \"false\",\r\n            \"components\": null\r\n          },\r\n          \"metadata\": {}\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"}
+		VarArray %LastGoodSourceHashes
+		{
+			u4{1128846263478761080}
+			u4{17314474902832608693}
+			u4{8806804696958909492}
+		}
+		VarArray %LastGoodSources
+		{
+			s{"BrickBreaker.cs"}
+			s{"BrickBreakerSimulation.cs"}
+			s{"Tests/BrickBreakerChecks.cs"}
+		}
+		s %ProjectFile{"BrickBreaker.csproj"}
+		s %SourceRoot{"Scripts"}
+	}
+}
+o
+{
+	Uuid %id{u4{10022994607960532121,6119739208142322718}}
+	s %t{"plAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"C# Script Project"}
+		VarArray %Dependencies
+		{
+			s{"BrickBreaker.csproj"}
+			s{"Editor/Packages.ddl"}
+			s{"Intermediate/PlasmaBuild/CSharpBindings/BindingSchema.stamp"}
+			s{"Intermediate/PlasmaBuild/CSharpBindings/CSharpSourceInputs.stamp"}
+		}
+		Uuid %DocumentID{u4{10022994607960532121,6119739208142322718}}
+		u4 %Hash{9158216104810003017}
+		VarArray %MetaInfo
+		{
+			Uuid{u4{17951048973660765273,4550313622332261205}}
+			Uuid{u4{5720777052756523652,11033820067933750167}}
+		}
+		VarArray %Outputs{}
+		VarArray %PackageDeps{}
+		VarArray %References{}
+	}
+}
+o
+{
+	Uuid %id{u4{5720777052756523652,11033820067933750167}}
+	s %t{"plExposedParameters"}
+	u3 %v{4}
+	p
+	{
+		VarArray %Parameters
+		{
+			Uuid{u4{12019711690504174857,1187450143061016252}}
+		}
+		Uuid %SubAssetGuid{u4{17607250672200950578,12155957045911662378}}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"plDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{14200332516169123712,6562698596077356672}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{14200332516169123712,6562698596077356672}}
+	s %t{"plCSharpProjectAssetProperties"}
+	u3 %v{3}
+	p
+	{
+		s %BindingManifest{"Intermediate/PlasmaBindings.json"}
+		s %BuildConfiguration{"Development"}
+		s %BuildDiagnostics{"  Determining projects to restore...\n  BrickBreaker -> <CSharpBuild>\\BrickBreaker.dll\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)"}
+		u4 %LastGoodBindingSchemaHash{9049450897031281156}
+		s %LastGoodDescriptorJson{"{\r\n  \"inspectorVersion\": 1,\r\n  \"entryAssembly\": \"BrickBreaker.dll\",\r\n  \"classes\": [\r\n    {\r\n      \"persistentGuid\": \"671e330c-f424-53c4-99fe-a612b5b04069\",\r\n      \"typeId\": \"E542A7983BCDBEEB\",\r\n      \"managedName\": \"Game.Scripts.BrickBreaker\",\r\n      \"sourceFile\": \"Scripts/BrickBreaker.cs\",\r\n      \"fields\": [\r\n        {\r\n          \"id\": \"D1EC21AFE5EA08C4\",\r\n          \"name\": \"RunMechanicsChecks\",\r\n          \"managedType\": \"System.Boolean\",\r\n          \"defaultValue\": {\r\n            \"kind\": \"boolean\",\r\n            \"value\": \"false\",\r\n            \"components\": null\r\n          },\r\n          \"metadata\": {}\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"}
+		s %LastGoodEntryAssembly{"BrickBreaker.dll"}
+		u4 %LastGoodEntryAssemblyHash{16343999107387964462}
+		VarArray %LastGoodFiles
+		{
+			s{"BrickBreaker.deps.json"}
+			s{"BrickBreaker.dll"}
+			s{"BrickBreaker.pdb"}
+		}
+		u4 %LastGoodProjectFileHash{9551728040030294355}
+		VarArray %LastGoodSourceHashes
+		{
+			u4{1128846263478761080}
+			u4{17314474902832608693}
+			u4{8806804696958909492}
+		}
+		VarArray %LastGoodSources
+		{
+			s{"BrickBreaker.cs"}
+			s{"BrickBreakerSimulation.cs"}
+			s{"Tests/BrickBreakerChecks.cs"}
+		}
+		s %ProjectFile{"BrickBreaker.csproj"}
+		s %SourceRoot{"Scripts"}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{11022584519647923637,2997702644636349154}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"plEditorPluginCSharp"}
+		VarArray %Properties{}
+		s %TypeName{"plCSharpProjectAssetProperties"}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{7009381072334277535,9659459603664967231}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"plReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{13033624727069548121,17368468367984449402}}
+	s %t{"plReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"plTypeFlags::Class|plTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"plReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+}

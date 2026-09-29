@@ -1,0 +1,216 @@
+HeaderV2
+{
+o
+{
+Uuid %id{u4{17672478383063878307,6012795477518312377}}
+s %t{"plAssetDocumentInfo"}
+u3 %v{2}
+s %n{"Header"}
+p
+{
+s %AssetType{"RenderPipeline"}
+Uuid %DocumentID{u4{17672478383063878307,6012795477518312377}}
+u4 %Hash{12304666637410662551}
+VarArray %Dependencies{}
+VarArray %References{}
+VarArray %MetaInfo{}
+VarArray %Outputs{}
+VarArray %PackageDeps{}
+}
+}
+}
+Objects
+{
+o
+{
+Uuid %id{u4{4427870596858482052,6895992568184238924}}
+s %t{"plSourcePass"}
+u3 %v{4}
+p
+{
+s %Name{"Color"}
+b %Active{1}
+Vec2 %Node::Pos{f{0,0}}
+s %Format{"plSourceFormat::Color4Channel16BitFloat"}
+b %Clear{1}
+Color %ClearColor{f{0.008,0.012,0.024,1}}
+}
+}
+o
+{
+Uuid %id{u4{12141209299498497456,6801224014814893208}}
+s %t{"plSourcePass"}
+u3 %v{4}
+p
+{
+s %Name{"Depth"}
+b %Active{1}
+Vec2 %Node::Pos{f{280,0}}
+s %Format{"plSourceFormat::Depth32BitFloat"}
+b %Clear{1}
+Color %ClearColor{f{0.008,0.012,0.024,1}}
+}
+}
+o
+{
+Uuid %id{u4{3901108648499617428,6248216455168452863}}
+s %t{"plOpaqueForwardRenderPass"}
+u3 %v{1}
+p
+{
+s %Name{"Opaque"}
+b %Active{1}
+Vec2 %Node::Pos{f{560,0}}
+}
+}
+o
+{
+Uuid %id{u4{5698650898102390183,6346223910097813021}}
+s %t{"plTonemapPass"}
+u3 %v{1}
+p
+{
+s %Name{"Tonemap"}
+b %Active{1}
+Vec2 %Node::Pos{f{840,0}}
+}
+}
+o
+{
+Uuid %id{u4{5763922896557658293,6713564596782838432}}
+s %t{"plSimpleRenderPass"}
+u3 %v{1}
+p
+{
+s %Name{"GameUI"}
+b %Active{1}
+Vec2 %Node::Pos{f{1120,0}}
+}
+}
+o
+{
+Uuid %id{u4{1053976194836417953,6294267101835417514}}
+s %t{"plTargetPass"}
+u3 %v{1}
+p
+{
+s %Name{"Target"}
+b %Active{1}
+Vec2 %Node::Pos{f{1400,0}}
+}
+}
+o
+{
+Uuid %id{u4{3808729253590609798,6107520005108095112}}
+s %t{"plVisibleObjectsExtractor"}
+u3 %v{1}
+p
+{
+s %Name{"Visible"}
+b %Active{1}
+Vec2 %Node::Pos{f{0,320}}
+}
+}
+o
+{
+Uuid %id{u4{10818615412644741808,6373566693162347003}}
+s %t{"plClusteredDataExtractor"}
+u3 %v{1}
+p
+{
+s %Name{"Lights"}
+b %Active{1}
+Vec2 %Node::Pos{f{0,320}}
+}
+}
+o
+{
+Uuid %id{u4{7746548149824339888,6292877803659027791}}
+s %t{"plDocumentObject_ConnectionBase"}
+u3 %v{1}
+p
+{
+Uuid %Source{u4{4427870596858482052,6895992568184238924}}
+s %SourcePin{"Output"}
+Uuid %Target{u4{3901108648499617428,6248216455168452863}}
+s %TargetPin{"Color"}
+}
+}
+o
+{
+Uuid %id{u4{13610669527308770466,5840757542392978365}}
+s %t{"plDocumentObject_ConnectionBase"}
+u3 %v{1}
+p
+{
+Uuid %Source{u4{12141209299498497456,6801224014814893208}}
+s %SourcePin{"Output"}
+Uuid %Target{u4{3901108648499617428,6248216455168452863}}
+s %TargetPin{"DepthStencil"}
+}
+}
+o
+{
+Uuid %id{u4{2692258437393576353,5896258309562543219}}
+s %t{"plDocumentObject_ConnectionBase"}
+u3 %v{1}
+p
+{
+Uuid %Source{u4{3901108648499617428,6248216455168452863}}
+s %SourcePin{"Color"}
+Uuid %Target{u4{5698650898102390183,6346223910097813021}}
+s %TargetPin{"Color"}
+}
+}
+o
+{
+Uuid %id{u4{14202799511279038861,6839967582981813328}}
+s %t{"plDocumentObject_ConnectionBase"}
+u3 %v{1}
+p
+{
+Uuid %Source{u4{5698650898102390183,6346223910097813021}}
+s %SourcePin{"Output"}
+Uuid %Target{u4{5763922896557658293,6713564596782838432}}
+s %TargetPin{"Color"}
+}
+}
+o
+{
+Uuid %id{u4{12694204372652592797,5857209255727749999}}
+s %t{"plDocumentObject_ConnectionBase"}
+u3 %v{1}
+p
+{
+Uuid %Source{u4{3901108648499617428,6248216455168452863}}
+s %SourcePin{"DepthStencil"}
+Uuid %Target{u4{5763922896557658293,6713564596782838432}}
+s %TargetPin{"DepthStencil"}
+}
+}
+o
+{
+Uuid %id{u4{13504819748583285633,5777956211776125373}}
+s %t{"plDocumentObject_ConnectionBase"}
+u3 %v{1}
+p
+{
+Uuid %Source{u4{5763922896557658293,6713564596782838432}}
+s %SourcePin{"Color"}
+Uuid %Target{u4{1053976194836417953,6294267101835417514}}
+s %TargetPin{"Color0"}
+}
+}
+o
+{
+Uuid %id{u4{9332912375987555769,5947408868552270939}}
+s %t{"plDocumentRoot"}
+u3 %v{1}
+s %n{"ObjectTree"}
+p
+{
+VarArray %Children{Uuid {u4{4427870596858482052,6895992568184238924}}Uuid {u4{12141209299498497456,6801224014814893208}}Uuid {u4{3901108648499617428,6248216455168452863}}Uuid {u4{5698650898102390183,6346223910097813021}}Uuid {u4{5763922896557658293,6713564596782838432}}Uuid {u4{1053976194836417953,6294267101835417514}}Uuid {u4{3808729253590609798,6107520005108095112}}Uuid {u4{10818615412644741808,6373566693162347003}}Uuid {u4{7746548149824339888,6292877803659027791}}Uuid {u4{13610669527308770466,5840757542392978365}}Uuid {u4{2692258437393576353,5896258309562543219}}Uuid {u4{14202799511279038861,6839967582981813328}}Uuid {u4{12694204372652592797,5857209255727749999}}Uuid {u4{13504819748583285633,5777956211776125373}}}
+}
+}
+}
+Types{}
