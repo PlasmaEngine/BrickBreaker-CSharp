@@ -26,6 +26,7 @@ AssetProfiles
 				{
 					VarDict %CameraPipelines{}
 					string %MainRenderPipeline{"{ 308de3b9-bda1-5371-a3ca-4ae3744141f5 }"}
+					uint8 %MsaaSampleCount{1}
 				}
 			}
 			o
@@ -140,6 +141,7 @@ AssetProfiles
 				{
 					VarDict %CameraPipelines{}
 					string %MainRenderPipeline{"{ 308de3b9-bda1-5371-a3ca-4ae3744141f5 }"}
+					uint8 %MsaaSampleCount{1}
 				}
 			}
 		}
@@ -183,6 +185,7 @@ AssetProfiles
 				{
 					VarDict %CameraPipelines{}
 					string %MainRenderPipeline{"{ 308de3b9-bda1-5371-a3ca-4ae3744141f5 }"}
+					uint8 %MsaaSampleCount{1}
 				}
 			}
 			o

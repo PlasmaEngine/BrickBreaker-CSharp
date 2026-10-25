@@ -1,14 +1,18 @@
 using Plasma;
+using System.Text.Json;
 
 namespace Game.Scripts;
 
 [PlasmaScript(Id = "671e330c-f424-53c4-99fe-a612b5b04069")]
-public sealed partial class BrickBreaker : ComponentScript
+public sealed partial class BrickBreaker : ComponentScript, IScriptReloadState
 {
   [Expose]
   public bool RunMechanicsChecks { get; set; }
+  [Expose]
+  public float test {get;set;}
 
-  private readonly BrickBreakerSimulation m_Game = new();
+  private BrickBreakerSimulation m_Game = new();
+  private bool m_RestoredOnReload;
   private double m_Accumulator = 0;
   private GameObject m_Paddle;
   private GameObject m_Ball;
@@ -27,8 +31,12 @@ public sealed partial class BrickBreaker : ComponentScript
       Log.Info($"Brick Breaker: {checks.Checks} mechanics checks passed.");
     }
 
-    m_Game.Reset();
-    m_Accumulator = 0;
+    if (!m_RestoredOnReload)
+    {
+      m_Game.Reset();
+      m_Accumulator = 0;
+    }
+    m_RestoredOnReload = false;
 
     m_Paddle = Owner.FindChildByName("Paddle", false);
     m_Ball = Owner.FindChildByName("Ball", false);
@@ -37,14 +45,14 @@ public sealed partial class BrickBreaker : ComponentScript
       m_Bricks[i] = Owner.FindChildByName($"Brick {i + 1}", false);
     }
 
-    m_Input = new InputComponent(Owner.FindComponentByTypeName("plInputComponent").Native);
-    m_Hud = new LocalBlackboardComponent(Owner.FindComponentByTypeName("plLocalBlackboardComponent").Native);
+    if (!Owner.TryGetComponent(out m_Input) || !Owner.TryGetComponent(out m_Hud))
+      throw new InvalidOperationException("BrickBreaker requires InputComponent and LocalBlackboardComponent on its owner.");
     UpdatePresentation();
   }
 
   public override void Update(Time deltaTime)
   {
-    if (!m_Input.Native.IsValid || !m_Hud.Native.IsValid)
+    if (!m_Input.Native.IsAlive || !m_Hud.Native.IsAlive)
       return;
 
     // The camera faces down the table, so positive world X is screen-left.
@@ -123,5 +131,21 @@ public sealed partial class BrickBreaker : ComponentScript
     m_Hud.SetEntryValue("ShowPrompt", title.Length != 0);
     m_Hud.SetEntryValue("PromptTitle", title);
     m_Hud.SetEntryValue("PromptSubtitle", subtitle);
+  }
+
+  private sealed record ReloadState(int Version, BrickBreakerSimulation Game, double Accumulator);
+  private static readonly JsonSerializerOptions s_ReloadJson = new() { IncludeFields = true };
+
+  public string CaptureReloadState() => JsonSerializer.Serialize(new ReloadState(1, m_Game, m_Accumulator), s_ReloadJson);
+
+  public void RestoreReloadState(string state)
+  {
+    var restored = JsonSerializer.Deserialize<ReloadState>(state, s_ReloadJson)
+      ?? throw new InvalidDataException("BrickBreaker reload state is missing.");
+    if (restored.Version != 1 || restored.Game.Bricks.Length != BrickBreakerSimulation.BrickCount)
+      throw new InvalidDataException("BrickBreaker reload state is incompatible.");
+    m_Game = restored.Game;
+    m_Accumulator = restored.Accumulator;
+    m_RestoredOnReload = true;
   }
 }

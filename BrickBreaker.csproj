@@ -5,10 +5,10 @@
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <EnableDefaultItems>false</EnableDefaultItems>
+    <PlasmaSeparateBindings>true</PlasmaSeparateBindings>
     <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <PlasmaBindingManifest Condition="'$(PlasmaBindingManifest)' == ''">Intermediate/PlasmaBindings.json</PlasmaBindingManifest>
     <PlasmaSourceRoot>$(MSBuildProjectDirectory)</PlasmaSourceRoot>
-    <CSharpPayload>$(MSBuildProjectDirectory)/Plugins/plasma.csharp/1.2.1/Bin/Windows_x64_Development/CSharp</CSharpPayload>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Scripts/**/*.cs" />

@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup Condition="Exists('$(MSBuildThisFileDirectory)Editor/Packages.ddl')">
+    <PlasmaCSharpPackageVersion>$([System.Text.RegularExpressions.Regex]::Match($([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory)Editor/Packages.ddl')), '%Id\s*\{\s*&quot;plasma\.csharp&quot;\s*\}\s*string\s*%Version\s*\{\s*&quot;([^&quot;]+)&quot;').Groups[1].Value)</PlasmaCSharpPackageVersion>
+    <CSharpPayload Condition="'$(CSharpPayload)' == ''">$(MSBuildThisFileDirectory)Plugins/plasma.csharp/$(PlasmaCSharpPackageVersion)/Bin/Windows_x64_Development/CSharp</CSharpPayload>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Development'">
+    <Optimize>false</Optimize>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Shipping'">
+    <Optimize>true</Optimize>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+</Project>

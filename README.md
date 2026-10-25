@@ -4,9 +4,9 @@ A complete 3D Brick Breaker with the same table, controls, 120 Hz swept collisio
 
 ## Open in the editor
 
-Requires Windows, Plasma Engine 0.9.2, and a .NET 10 SDK. `global.json` permits newer .NET 10 feature bands.
+Requires Windows, Plasma Engine 0.11.1, and a .NET 10 SDK. `global.json` permits newer .NET 10 feature bands.
 
-Get the project from the Plasma Launcher's **Samples** page (BrickBreaker, C#), or clone this repository and use **Add Existing Project**. The first time the editor opens it, it offers to install the packages listed in `Editor/Packages.ddl` (GameUI 1.2.1 and C# 1.2.1). Accept, and they are installed into the project's `Plugins` folder. Then open `Scenes/Main.plScene` and play.
+Get the project from the Plasma Launcher's **Samples** page (BrickBreaker, C#), or clone this repository and use **Add Existing Project**. The first time the editor opens it, it offers to install the packages listed in `Editor/Packages.ddl` (GameUI 1.4.0 and C# 1.3.1). Accept, and they are installed into the project's `Plugins` folder. Then open `Scenes/Main.plScene` and play.
 
 ## Build and play without the editor
 
@@ -16,7 +16,7 @@ Get the project from the Plasma Launcher's **Samples** page (BrickBreaker, C#), 
 
 Or double-click `Play.cmd`. No C++ build is required: the script compiles the C# project, transforms the assets, optionally runs the mechanics tests, and launches the engine's `Player.exe`.
 
-The script uses the engine the launcher assigned to this project and the packages the editor installed. Pass `-SdkRoot 'C:\path\to\engine'` to use another engine, or `-GameUiRoot` and `-ScriptPackageRoot` to use built package folders. The C# package must include its `CSharp` managed payload and bundled `DotNet` runtime; the script copies both beside Player. Close Player before rebuilding shared DLLs.
+The script uses the engine the launcher assigned to this project and the packages the editor installed. Pass `-SdkRoot 'C:\path\to\engine'` to use another engine, or `-GameUiRoot` and `-ScriptPackageRoot` to use built package folders. The C# package must include its `CSharp` managed payload and bundled `DotNet` runtime. Engine and package files are staged into this project's `Intermediate/Runtime/Binaries`; building the sample does not overwrite the shared SDK Player payload. Close this project's Player before rebuilding it.
 
 ## Controls
 
@@ -41,6 +41,12 @@ Clear 24 bricks for 2,400 points. Each hit increases ball speed up to a cap. Mis
 - `UI/`: GameUI document, blackboard contract, and font.
 
 The simulation uses kinematic sweeps against expanded boxes on the horizontal plane, so no physics plugin is required. Keep authored object names and transforms aligned with the simulation when changing the layout. Generated bindings and build outputs live in ignored directories.
+
+## Reload while playing
+
+Compatible method-body edits can update the existing script instance in editor simulation. Development uses debug-compatible portable symbols; Shipping uses the normal optimized compiler. Structural edits use a full reload. `IScriptReloadState` preserves the simulation's score, lives, bricks and accumulator across that replacement, and scene references are reacquired without resetting the round. Compile errors retain the last successful code. Attached managed debuggers use full reload.
+
+The C# asset's Problems tab opens diagnostics in your IDE. Its Setup tab checks the SDK and packaged tools. Disable Use Persistent Compiler to use the standard build path. `Directory.Build.props` resolves the C# payload version from `Editor/Packages.ddl`; update the package declaration when upgrading.
 
 ## Validation
 

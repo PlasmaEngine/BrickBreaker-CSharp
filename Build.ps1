@@ -35,7 +35,22 @@ function Get-ProjectPackages {
 
 $SdkRoot = Resolve-PlasmaSdk $SdkRoot
 Write-Host "Engine: $SdkRoot"
-$binaryDirectory = Join-Path $SdkRoot 'Binaries/Windows_Development'
+$sdkBinaryDirectory = Join-Path $SdkRoot 'Binaries/Windows_Development'
+$binaryDirectory = Join-Path $PSScriptRoot 'Intermediate/Runtime/Binaries'
+New-Item -ItemType Directory -Path $binaryDirectory -Force | Out-Null
+# Keep all mutable package deployment project-local. Do not overwrite a shared SDK's Player payload.
+foreach ($engineFile in Get-ChildItem -LiteralPath $sdkBinaryDirectory -File) {
+  if ($engineFile.Extension -notin @('.dll', '.exe', '.json', '.plPluginBundle', '.ini', '.qss', '.txt')) { continue }
+  $runtimeFile = Join-Path $binaryDirectory $engineFile.Name
+  if (-not (Test-Path -LiteralPath $runtimeFile) -or (Get-Item -LiteralPath $runtimeFile).LastWriteTimeUtc -lt $engineFile.LastWriteTimeUtc -or (Get-Item -LiteralPath $runtimeFile).Length -ne $engineFile.Length) {
+    Copy-Item -LiteralPath $engineFile.FullName -Destination $runtimeFile -Force
+  }
+}
+foreach ($qtFolder in @('platforms', 'imageformats', 'iconengines', 'styles', 'tls', 'D3D12', 'Aftermath')) {
+  $sdkQtFolder = Join-Path $sdkBinaryDirectory $qtFolder
+  if (Test-Path -LiteralPath $sdkQtFolder) { Copy-Item -LiteralPath $sdkQtFolder -Destination $binaryDirectory -Recurse -Force }
+}
+Set-Content -LiteralPath (Join-Path $binaryDirectory 'plSdkRoot.txt') -Value ([IO.Path]::GetRelativePath($binaryDirectory, $SdkRoot)) -NoNewline
 $scriptPackage = 'plasma.csharp'
 $sources = @{ 'plasma.gameui' = $GameUiRoot; $scriptPackage = $ScriptPackageRoot }
 
@@ -96,6 +111,6 @@ if ($Test) {
   } finally { Pop-Location }
 }
 if ($Run) {
-  $player = Start-Process -FilePath (Join-Path $binaryDirectory 'Player.exe') -ArgumentList '-project', ('"' + $PSScriptRoot + '"'), '-scene', 'Scenes/Main.plScene' -Wait -PassThru
+  $player = Start-Process -FilePath (Join-Path $binaryDirectory 'Player.exe') -ArgumentList '-project', ('"' + $PSScriptRoot + '"'), '-scene', 'Scenes/Main.plScene' -WindowStyle Hidden -Wait -PassThru
   if ($player.ExitCode -ne 0) { throw "Player exited with code $($player.ExitCode)." }
 }

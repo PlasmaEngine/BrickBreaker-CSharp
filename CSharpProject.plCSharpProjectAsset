@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{12019711690504174857,1187450143061016252}}
+	Uuid %id{u4{4987509338942930973,556702507726481645}}
 	s %t{"plExposedParameter"}
 	u3 %v{3}
 	p
@@ -16,17 +16,31 @@ o
 }
 o
 {
+	Uuid %id{u4{12019711690504174857,1187450143061016252}}
+	s %t{"plExposedParameter"}
+	u3 %v{3}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"plPropertyCategory::Member"}
+		f %DefaultValue{0}
+		s %Name{"test"}
+		s %Type{"float"}
+	}
+}
+o
+{
 	Uuid %id{u4{17951048973660765273,4550313622332261205}}
 	s %t{"plCSharpProjectAssetMetaData"}
 	u3 %v{3}
 	p
 	{
-		s %DescriptorJson{"{\r\n  \"inspectorVersion\": 1,\r\n  \"entryAssembly\": \"BrickBreaker.dll\",\r\n  \"classes\": [\r\n    {\r\n      \"persistentGuid\": \"671e330c-f424-53c4-99fe-a612b5b04069\",\r\n      \"typeId\": \"E542A7983BCDBEEB\",\r\n      \"managedName\": \"Game.Scripts.BrickBreaker\",\r\n      \"sourceFile\": \"Scripts/BrickBreaker.cs\",\r\n      \"fields\": [\r\n        {\r\n          \"id\": \"D1EC21AFE5EA08C4\",\r\n          \"name\": \"RunMechanicsChecks\",\r\n          \"managedType\": \"System.Boolean\",\r\n          \"defaultValue\": {\r\n            \"kind\": \"boolean\",\r\n            \"value\": \"false\",\r\n            \"components\": null\r\n          },\r\n          \"metadata\": {}\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"}
+		s %DescriptorJson{"{\r\n  \"inspectorVersion\": 1,\r\n  \"entryAssembly\": \"BrickBreaker.dll\",\r\n  \"classes\": [\r\n    {\r\n      \"persistentGuid\": \"671e330c-f424-53c4-99fe-a612b5b04069\",\r\n      \"typeId\": \"E542A7983BCDBEEB\",\r\n      \"managedName\": \"Game.Scripts.BrickBreaker\",\r\n      \"sourceFile\": \"Scripts/BrickBreaker.cs\",\r\n      \"fields\": [\r\n        {\r\n          \"id\": \"2E9CB7424FD01459\",\r\n          \"name\": \"test\",\r\n          \"managedType\": \"System.Single\",\r\n          \"defaultValue\": {\r\n            \"kind\": \"floating\",\r\n            \"value\": \"0\",\r\n            \"components\": null\r\n          },\r\n          \"metadata\": {}\r\n        },\r\n        {\r\n          \"id\": \"D1EC21AFE5EA08C4\",\r\n          \"name\": \"RunMechanicsChecks\",\r\n          \"managedType\": \"System.Boolean\",\r\n          \"defaultValue\": {\r\n            \"kind\": \"boolean\",\r\n            \"value\": \"false\",\r\n            \"components\": null\r\n          },\r\n          \"metadata\": {}\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"}
 		VarArray %LastGoodSourceHashes
 		{
-			u4{1128846263478761080}
-			u4{17314474902832608693}
-			u4{8806804696958909492}
+			u4{359315738944793302}
+			u4{2188447601963823751}
+			u4{11410180517414439219}
 		}
 		VarArray %LastGoodSources
 		{
@@ -55,7 +69,7 @@ o
 			s{"Intermediate/PlasmaBuild/CSharpBindings/CSharpSourceInputs.stamp"}
 		}
 		Uuid %DocumentID{u4{10022994607960532121,6119739208142322718}}
-		u4 %Hash{9158216104810003017}
+		u4 %Hash{15061764242509874247}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{17951048973660765273,4550313622332261205}}
@@ -76,6 +90,7 @@ o
 		VarArray %Parameters
 		{
 			Uuid{u4{12019711690504174857,1187450143061016252}}
+			Uuid{u4{4987509338942930973,556702507726481645}}
 		}
 		Uuid %SubAssetGuid{u4{17607250672200950578,12155957045911662378}}
 	}
@@ -106,23 +121,26 @@ o
 	{
 		s %BindingManifest{"Intermediate/PlasmaBindings.json"}
 		s %BuildConfiguration{"Development"}
-		s %BuildDiagnostics{"  Determining projects to restore...\n  BrickBreaker -> <CSharpBuild>\\BrickBreaker.dll\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)"}
-		u4 %LastGoodBindingSchemaHash{9049450897031281156}
-		s %LastGoodDescriptorJson{"{\r\n  \"inspectorVersion\": 1,\r\n  \"entryAssembly\": \"BrickBreaker.dll\",\r\n  \"classes\": [\r\n    {\r\n      \"persistentGuid\": \"671e330c-f424-53c4-99fe-a612b5b04069\",\r\n      \"typeId\": \"E542A7983BCDBEEB\",\r\n      \"managedName\": \"Game.Scripts.BrickBreaker\",\r\n      \"sourceFile\": \"Scripts/BrickBreaker.cs\",\r\n      \"fields\": [\r\n        {\r\n          \"id\": \"D1EC21AFE5EA08C4\",\r\n          \"name\": \"RunMechanicsChecks\",\r\n          \"managedType\": \"System.Boolean\",\r\n          \"defaultValue\": {\r\n            \"kind\": \"boolean\",\r\n            \"value\": \"false\",\r\n            \"components\": null\r\n          },\r\n          \"metadata\": {}\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"}
+		s %BuildDiagnostics{""}
+		u4 %BuildRequest{0}
+		u4 %LastGoodBindingSchemaHash{3832349609483163228}
+		s %LastGoodDescriptorJson{"{\r\n  \"inspectorVersion\": 1,\r\n  \"entryAssembly\": \"BrickBreaker.dll\",\r\n  \"classes\": [\r\n    {\r\n      \"persistentGuid\": \"671e330c-f424-53c4-99fe-a612b5b04069\",\r\n      \"typeId\": \"E542A7983BCDBEEB\",\r\n      \"managedName\": \"Game.Scripts.BrickBreaker\",\r\n      \"sourceFile\": \"Scripts/BrickBreaker.cs\",\r\n      \"fields\": [\r\n        {\r\n          \"id\": \"2E9CB7424FD01459\",\r\n          \"name\": \"test\",\r\n          \"managedType\": \"System.Single\",\r\n          \"defaultValue\": {\r\n            \"kind\": \"floating\",\r\n            \"value\": \"0\",\r\n            \"components\": null\r\n          },\r\n          \"metadata\": {}\r\n        },\r\n        {\r\n          \"id\": \"D1EC21AFE5EA08C4\",\r\n          \"name\": \"RunMechanicsChecks\",\r\n          \"managedType\": \"System.Boolean\",\r\n          \"defaultValue\": {\r\n            \"kind\": \"boolean\",\r\n            \"value\": \"false\",\r\n            \"components\": null\r\n          },\r\n          \"metadata\": {}\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"}
 		s %LastGoodEntryAssembly{"BrickBreaker.dll"}
-		u4 %LastGoodEntryAssemblyHash{16343999107387964462}
+		u4 %LastGoodEntryAssemblyHash{15481575975842613315}
 		VarArray %LastGoodFiles
 		{
 			s{"BrickBreaker.deps.json"}
 			s{"BrickBreaker.dll"}
 			s{"BrickBreaker.pdb"}
+			s{"Plasma.HotReload.json"}
+			s{"Plasma.ProjectBindings.dll"}
 		}
-		u4 %LastGoodProjectFileHash{9551728040030294355}
+		u4 %LastGoodProjectFileHash{12587215116167391995}
 		VarArray %LastGoodSourceHashes
 		{
-			u4{1128846263478761080}
-			u4{17314474902832608693}
-			u4{8806804696958909492}
+			u4{359315738944793302}
+			u4{2188447601963823751}
+			u4{11410180517414439219}
 		}
 		VarArray %LastGoodSources
 		{
@@ -132,6 +150,7 @@ o
 		}
 		s %ProjectFile{"BrickBreaker.csproj"}
 		s %SourceRoot{"Scripts"}
+		b %UsePersistentCompiler{1}
 	}
 }
 }

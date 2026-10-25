@@ -3,7 +3,7 @@ namespace Game.Scripts;
 // Runs the same scenarios as the C++ template against the actual script simulation.
 public sealed class BrickBreakerChecks
 {
-  public int Failures;
+  public int Failures; 
   public int Checks;
 
   private void Check(bool condition)
