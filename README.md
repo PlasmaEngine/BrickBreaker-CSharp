@@ -4,7 +4,7 @@ A complete 3D Brick Breaker with the same table, controls, 120 Hz swept collisio
 
 ## Open in the editor
 
-Requires Windows, Plasma Engine 0.11.2, and a .NET 10 SDK. `global.json` permits newer .NET 10 feature bands.
+Requires Windows, Plasma Engine 0.12.0, and a .NET 10 SDK. `global.json` permits newer .NET 10 feature bands.
 
 Get the project from the Plasma Launcher's **Samples** page (BrickBreaker, C#), or clone this repository and use **Add Existing Project**. The first time the editor opens it, it offers to install the packages listed in `Editor/Packages.ddl` (GameUI 1.4.1 and C# 1.3.2). Accept, and they are installed into the project's `Plugins` folder. Then open `Scenes/Main.plScene` and play.
 
